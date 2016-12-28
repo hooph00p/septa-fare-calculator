@@ -1,0 +1,35 @@
+{
+  "name": "septa-fare-calculator",
+  "version": "0.0.1-alpha",
+  "description": "Code Assessment for Think Brownstone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hooph00p/septa-fare-calculator.git"
+  },
+  "keywords": [
+    "septa",
+    "fare",
+    "calculator",
+    "think",
+    "brownstone"
+  ],
+  "author": "Jared Hooper (@hooph00p)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hooph00p/septa-fare-calculator/issues"
+  },
+  "homepage": "https://github.com/hooph00p/septa-fare-calculator#readme",
+  "devDependencies": {
+    "gulp-strip-debug": "^1.1.0",
+    "autoprefixer": "^6.6.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sourcemaps": "^1.9.1"
+  },
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  }
+}
