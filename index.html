@@ -1,10 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>SEPTA Regional Rail Fare Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<!-- vendor:css -->
+	<link rel="stylesheet" type="text/css" href="./node_modules/normalize.css/normalize.css" />
+	<!-- end vendor:css -->
+	<!-- vendor: js -->
+	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+	<!-- end vendor:js -->
+	<script src="main.js"></script>
 </head>
+
 <body>
-	
+	<div class="container">
+		<div class="septa-widget text-center">
+
+			<div class="septa-title">
+				<h1>Regional Rail Fares</h1>
+			</div>
+
+			<div class="septa-content">
+
+				<div class="section">
+					<div class="section-title">
+						<h1>Where are you going?</h1>
+					</div>
+					<div class="section-input">
+						<select class="select" id="zone">
+							<option value="1">Zone 1</option>
+							<option value="2">Zone 2</option>
+							<option value="3">Zone 3</option>
+							<option value="4">Zone 4</option>
+							<option value="5">Zone 5</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="section-title">
+						<h1>When are you riding?</h1>
+					</div>
+					<div class="section-input">
+						<select class="select" id="time">
+							<option value="anytime">Anytime</option>
+							<option value="weekday">Weekday</option>
+							<option value="evening_weekend">Evening Weekend</option>
+						</select>
+					</div>
+					<div class="section-info">
+						<p id="time-helper">Helper text that explains the options above.</p>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="section-title">
+						<h1>Where will you purchase the fare?</h1>
+					</div>
+					<div class="section-input">
+						<div class="radio-wrap">
+							<input type="radio" name="purchase_method" value="advance_purchase" checked/> Station Kiosk
+						</div>
+						<div class="radio-wrap">
+							<input type="radio" name="purchase_method" value="onboard_purchase" /> Onboard
+						</div>
+					</div>
+					<div class="section-info">
+						<p id="where-helper">Helper text that explains the options above.</p>
+					</div>
+				</div>
+
+				<div class="section">
+					<div class="section-title">
+						<h1>How many rides will you need?</h1>
+					</div>
+					<div class="section-input">
+						<input type="number" name="quantity" min="1" value="1"/>
+					</div>
+				</div>
+			</div>
+			<div class="septa-footer">
+				<p>Your fare will cost:</p>
+				<div class="fare-cost" id="cost"></div>
+			</div>
+		</div>
+	</div>
 </body>
+
 </html>
