@@ -1,4 +1,4 @@
-# Think Brownstone Peeps:
+# Think Brownstone:
 
 Thanks for taking the time to review my code! This was a nice break from my backend nonsense.
 
