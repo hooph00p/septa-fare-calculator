@@ -1,6 +1,11 @@
 $dark: #333
 $light: #fff
 
+
+=bordered
+    border: 1px solid black
+    border-radius: 5px
+
 .container
     margin: 0 auto
     width: 400px
@@ -18,8 +23,7 @@ $light: #fff
         color: $dark
 
         .section
-            border: .1em solid gray
-            padding: 1.5em .5em 2.5em .5em
+            padding: 0.5em 1em 1.5em 1em
 
             .section-title
                 h1
@@ -27,6 +31,7 @@ $light: #fff
 
             .section-input
                 select
+                    +bordered
                     -webkit-appearance: none
                     -moz-appearance: none
                     appearance: none
@@ -34,19 +39,29 @@ $light: #fff
                     width: 100%
 
                 input[type="number"]
-                    width: 100%
+                    +bordered
+                    width: 50%
+                    padding: 0.5em
+                    font-size: 1.5em
+                    text-align: center
 
                 .radio-wrap
-                    padding: 0.5em 2em
+                    margin: 0 auto
+                    width: 150px
+                    font-size: 1.2em
+                    padding: .2em
+                    text-align: left
 
             .section-info
-                font-size: 1em 
-                color: #333
+                padding-top: 1em
+                font-size: .8em 
+                color: #aaa
 
     .septa-footer 
 
         .fare-cost
-            font-size: 2em
+            font-size: 3em
+            font-weight: 900
 
 
 .text-center

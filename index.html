@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="./node_modules/normalize.css/normalize.css" />
 	<!-- end vendor:css -->
 	<!-- vendor: js -->
+	<!-- Normally I'd have a gulp task assemble these dependencies. -->
 	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
 	<!-- end vendor:js -->
 	<script src="main.js"></script>
@@ -16,6 +17,7 @@
 
 <body>
 	<div class="container">
+		<!-- widget -->
 		<div class="septa-widget text-center">
 
 			<div class="septa-title">
@@ -23,7 +25,7 @@
 			</div>
 
 			<div class="septa-content">
-
+				<!-- zone -->
 				<div class="section">
 					<div class="section-title">
 						<h1>Where are you going?</h1>
@@ -38,7 +40,11 @@
 						</select>
 					</div>
 				</div>
+				<!-- end zone -->
 
+				<hr/>
+
+				<!-- type -->
 				<div class="section">
 					<div class="section-title">
 						<h1>When are you riding?</h1>
@@ -54,7 +60,11 @@
 						<p id="type-helper">Helper text that explains the options above.</p>
 					</div>
 				</div>
+				<!-- end type -->
 
+				<hr/>
+
+				<!-- purchase -->
 				<div class="section">
 					<div class="section-title">
 						<h1>Where will you purchase the fare?</h1>
@@ -71,7 +81,11 @@
 						<p id="purchase-helper">Helper text that explains the options above.</p>
 					</div>
 				</div>
+				<!-- end purchase -->
 
+				<hr/>
+
+				<!-- trips -->
 				<div class="section">
 					<div class="section-title">
 						<h1>How many rides will you need?</h1>
@@ -80,12 +94,13 @@
 						<input type="number" name="trips" min="1" value="1"/>
 					</div>
 				</div>
+				<!-- end trips -->
 			</div>
 			<div class="septa-footer">
 				<p>Your fare will cost:</p>
 				<div class="fare-cost" id="cost"></div>
 			</div>
-		</div>
+		</div><!-- end widget -->
 	</div>
 </body>
 
